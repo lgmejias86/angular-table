@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { EmployeeService } from './service/employee-service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'table-app';
+
+  constructor(private employeeService: EmployeeService){
+    this.employeeService.getEmployees();
+  }
 }
