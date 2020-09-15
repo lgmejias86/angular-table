@@ -1,24 +1,27 @@
 import { Injectable } from '@angular/core';
 import { Employee } from '../models/employee.model';
 import { HttpClient } from '@angular/common/http';
+import { environment } from './../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class EmployeeService {
-  private listEmployees:  Employee[];
-  apiRoot: string = 'http://localhost:3000/employees';
+  private listEmployees: Employee[];
+  apiRoot: string = environment.apiUrl;
 
   constructor(private httpClient: HttpClient) {
     this.listEmployees = [];
    }
 
 
-  getEmployees(): Employee[]{
+   getEmployees(): Employee[]{
+    let array : Employee[];
     const promise = this.httpClient.get(this.apiRoot).toPromise();
     promise.then(x => {
-        this.listEmployees = x as Employee[];
+         this.listEmployees = x as Employee[];
+         return  this.listEmployees;
     });
-    return this.listEmployees;
+    return null;
   }
 }
