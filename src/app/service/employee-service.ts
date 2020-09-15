@@ -17,8 +17,8 @@ export class EmployeeService {
 
    getEmployees(): Employee[]{
     const promise = this.httpClient.get(this.apiRoot).toPromise();
-    promise.then(x => {
-         this.listEmployees = x as Employee[];
+    promise.then(emp => {
+         this.listEmployees = emp as Employee[];
          return  this.listEmployees;
     });
     return null;
