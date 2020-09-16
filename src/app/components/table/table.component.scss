@@ -1,0 +1,25 @@
+table {
+    width: 100%;
+  }
+
+  ::ng-deep{
+    .mat-select-value-text, .mat-select-arrow{
+        display: none;
+    }
+
+    div.mat-form-field-infix {
+        width: 24px;
+        display: flex;
+    }
+    .mat-form-field-underline{
+        display: none;
+    }
+}
+    .play-arrow{
+        font-size: 16px;
+    }
+
+    .last-column{
+        text-align: end;
+    }
+
