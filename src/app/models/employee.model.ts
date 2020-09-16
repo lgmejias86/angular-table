@@ -12,4 +12,5 @@ export class Employee{
     related_business: string;
     website: string;
     social: string;
+    duration_association: string;
 }
