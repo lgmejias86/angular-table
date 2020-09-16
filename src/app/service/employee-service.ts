@@ -21,7 +21,7 @@ export class EmployeeService {
 
     return this.httpClient.get(this.apiRoot).pipe(
       map((response: any) => {
-        return response.data;
+        return response;
       })
     );
   }

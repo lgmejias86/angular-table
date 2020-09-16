@@ -12,7 +12,7 @@
           "project":"EPIC",
           "operational_years":"2013 - present",
           "duration_association":"1900-CEO.CFO, Srcretary",
-          "related_business":"In the of the business",
+          "related_business":"In the of the Hollywood",
           "website":"https://example.com/",
           "social":"https://www.facebook.com/pages/category/example-social page"
       },
@@ -20,7 +20,7 @@
         "id":3,
         "name":"Jone Doe2",
         "address":"Address 4",
-        "country_principality":"Argentina",
+        "country_principality":"Cuba",
         "phone_number":"123-456-789",
         "email":"jane.doe@hotmail.com",
         "business_name":"International",
@@ -28,10 +28,74 @@
         "project":"EPIC",
         "operational_years":"2015 - present",
         "duration_association":"1900-CEO.CFO, Srcretary",
-        "related_business":"In the of the business",
+        "related_business":"In the of the Hollywood",
         "website":"https://example.com/",
         "social":"https://www.facebook.com/pages/category/example-social page"
-    }
+    },
+    {
+      "id":4,
+      "name":"Cris Paul",
+      "address":"Address 2",
+      "country_principality":"E.U",
+      "phone_number":"123-456-789",
+      "email":"cris.paul@hotmail.com",
+      "business_name":"International",
+      "network_id":"2224124114",
+      "project":"EPIC",
+      "operational_years":"2015 - present",
+      "duration_association":"1900-CEO.CFO, Srcretary",
+      "related_business":"In the of the NBA",
+      "website":"https://example.com/",
+      "social":"https://www.facebook.com/pages/category/example-social page"
+  },
+  {
+    "id":5,
+    "name":"Lebron James",
+    "address":"Address 3",
+    "country_principality":"Canada",
+    "phone_number":"123-456-789",
+    "email":"lebron.james@hotmail.com",
+    "business_name":"International",
+    "network_id":"2224124114",
+    "project":"EPIC",
+    "operational_years":"2015 - present",
+    "duration_association":"1900-CEO.CFO, Srcretary",
+    "related_business":"In the of the NBA",
+    "website":"https://example.com/",
+    "social":"https://www.facebook.com/pages/category/example-social page"
+  },
+  {
+    "id":6,
+    "name":"James Harden",
+    "address":"Address 7",
+    "country_principality":"Australia",
+    "phone_number":"123-456-789",
+    "email":"james@hotmail.com",
+    "business_name":"International",
+    "network_id":"2224124114",
+    "project":"EPIC",
+    "operational_years":"2015 - present",
+    "duration_association":"1900-CEO.CFO, Srcretary",
+    "related_business":"In the of the NBA",
+    "website":"https://example.com/",
+    "social":"https://www.facebook.com/pages/category/example-social page"
+  },
+  {
+    "id":7,
+    "name":"Loe Messi",
+    "address":"Address 7",
+    "country_principality":"Argentina",
+    "phone_number":"123-456-789",
+    "email":"leo@hotmail.com",
+    "business_name":"International",
+    "network_id":"2224124114",
+    "project":"EPIC",
+    "operational_years":"2012 - present",
+    "duration_association":"1900-CEO.CFO, Srcretary",
+    "related_business":"In the of the football",
+    "website":"https://example.com/",
+    "social":"https://www.facebook.com/pages/category/example-social page"
+  }
       
     ]
-  }
+}
