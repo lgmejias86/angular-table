@@ -28,7 +28,7 @@
             <th mat-header-cell *matHeaderCellDef class="last-column"> 
                 <mat-form-field>
                     <mat-icon aria-hidden="false" aria-label="settings">settings</mat-icon>
-                    <mat-select [formControl]="columnsControl" multiple>
+                    <mat-select (selectionChange)="comboChange($event)" [formControl]="columnsControl" multiple>
                         <mat-option *ngFor="let column of allColumns" [value]="column">{{column}}</mat-option>
                     </mat-select>
                 </mat-form-field> 

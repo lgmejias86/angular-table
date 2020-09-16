@@ -26,14 +26,18 @@ export class TableComponent implements OnInit, OnDestroy {
   columnsToDisplay: string[] = this.allColumns.slice( 0, 6);
   dataSource: Employee[] = [];
 
-  toppingList: string[] = ['Extra cheese', 'Mushroom', 'Onion', 'Pepperoni', 'Sausage', 'Tomato'];
-  myselectedFoods = ['Extra cheese', 'Mushroom'];
-
   columnsControl: FormControl = new FormControl(this.columnsToDisplay);
 
   $unSubscribeAll = new Subject();
 
   constructor(private employeeService: EmployeeService) { }
+
+  comboChange(event) {
+      this.displayedColumns.pop();
+      this.displayedColumns.push(this.columnsControl.value[this.columnsControl.value.length-1]);
+      this.displayedColumns.push('select');
+      this.columnsToDisplay.push(this.columnsControl.value[this.columnsControl.value.length-1]);
+  }
 
   ngOnInit(): void {
     this.displayedColumns.push('select');
