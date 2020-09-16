@@ -33,10 +33,11 @@ export class TableComponent implements OnInit, OnDestroy {
   constructor(private employeeService: EmployeeService) { }
 
   comboChange(event) {
-      this.displayedColumns.pop();
-      this.displayedColumns.push(this.columnsControl.value[this.columnsControl.value.length-1]);
+      this.displayedColumns = [];
+      this.columnsToDisplay = [];
+      Object.assign(this.displayedColumns, this.columnsControl.value);
+      Object.assign(this.columnsToDisplay, this.columnsControl.value);
       this.displayedColumns.push('select');
-      this.columnsToDisplay.push(this.columnsControl.value[this.columnsControl.value.length-1]);
   }
 
   ngOnInit(): void {
